@@ -2,7 +2,7 @@ name: Venkat
 replicas: 2
 
 image: nginx:stable
-# dockercfg: <+artifact.imagePullSecret>
+
 
 createNamespace: false
 namespace: <+infra.namespace>

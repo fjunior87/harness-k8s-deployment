@@ -1,4 +1,4 @@
-name: Venkat
+name: venkat
 replicas: 2
 
 image: nginx:stable

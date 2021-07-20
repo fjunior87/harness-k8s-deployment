@@ -1,7 +1,7 @@
 name: venkat
 replicas: 2
 
-image: nginx:stable
+image: gcr.io/google-containers/echoserver:1.1
 
 
 createNamespace: false

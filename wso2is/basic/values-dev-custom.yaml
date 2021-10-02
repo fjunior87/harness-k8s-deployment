@@ -1,0 +1,10 @@
+# Using it just to override the mysql dependency
+wso2:
+  mysql:
+    enabled: false
+  wso2is:
+      # Container image configurations
+      # If a custom image must be used, uncomment 'dockerRegistry' and provide its value
+      # dockerRegistry: ""
+      imageName: "<+artifact.imagePath>"
+      imageTag: "5.11.0"

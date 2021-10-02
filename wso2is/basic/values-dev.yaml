@@ -1,5 +1,4 @@
 # Using it just to override the mysql dependency
 wso2:
-  deployment:
-    dependencies:
-      mysql: false
+  mysql:
+    enabled: false

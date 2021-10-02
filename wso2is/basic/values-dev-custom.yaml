@@ -7,4 +7,4 @@ wso2:
       # If a custom image must be used, uncomment 'dockerRegistry' and provide its value
       # dockerRegistry: ""
       imageName: "<+artifact.imagePath>"
-      imageTag: "5.11.0"
+      imageTag: "<+artifact.tag>"

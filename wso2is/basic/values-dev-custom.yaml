@@ -6,5 +6,4 @@ wso2:
       # Container image configurations
       # If a custom image must be used, uncomment 'dockerRegistry' and provide its value
       # dockerRegistry: ""
-      imageName: "<+artifact.imagePath>"
-      imageTag: "<+artifact.tag>"
+      imageName: "<+artifact.image>"

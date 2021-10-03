@@ -2,8 +2,6 @@
 wso2:
   mysql:
     enabled: false
-  wso2is:
-      # Container image configurations
-      # If a custom image must be used, uncomment 'dockerRegistry' and provide its value
-      # dockerRegistry: ""
-      imageName: "<+artifact.image>"
+  deployment:
+    wso2is:
+      image: "<+artifact.image>"

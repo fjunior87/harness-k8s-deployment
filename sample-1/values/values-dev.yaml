@@ -1,4 +1,4 @@
-name: <+serviceConfig.serviceDefinition.spec.variables.name>
+name: <+service.variables.name>
 replicas: 2
 
 image: <+artifact.image>

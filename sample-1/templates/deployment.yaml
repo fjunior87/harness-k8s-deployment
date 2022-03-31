@@ -17,13 +17,13 @@ stringData:
 {{.Values.env.secrets | toYaml | indent 2}}
 ---
 {{- end}}
-{{- if .Values.env.secrets}}
+{{- if .Values.secret}}
 apiVersion: v1
 kind: Secret
 metadata:
   name: {{.Values.name}}-test-dynamic
 stringData:
-{{.Values.secret}}
+{{.Values.secret | toYaml | indent 2}}
 ---
 {{- end}}
 

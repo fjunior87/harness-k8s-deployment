@@ -23,7 +23,7 @@ kind: Secret
 metadata:
   name: {{.Values.name}}-test-dynamic
 stringData:
-{{.Values.secret | toYaml | indent 2}}
+{{.Values.secret | indent 2}}
 ---
 {{- end}}
 

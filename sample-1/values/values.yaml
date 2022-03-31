@@ -26,3 +26,6 @@ env:
     key1: value10
   secrets:
     key2: value2
+secret: <+pipeline.stages.Deploy.spec.execution.steps.CreateScript.output.outputVariables.finalVar2>
+  
+  

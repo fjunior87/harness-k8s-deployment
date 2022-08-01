@@ -27,6 +27,6 @@ env:
   secrets:
     key2: value2
 #removing secret
-#secret: " pipeline.stages.Deploy.spec.execution.steps.CreateScript.output.outputVariables.finalVar2 "
+secret: <+secrets.getValue(<+pipeline.stages.Deploy.spec.execution.steps.CreateScript.output.outputVariables.SECRET_NAME>)>
   
   

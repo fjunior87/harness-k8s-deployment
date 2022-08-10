@@ -21,6 +21,8 @@ stringData:
 apiVersion: v1
 kind: Secret
 metadata:
+  annotations:
+    harness.io/skip-versioning: 'true'
   name: {{.Values.name}}-test-dynamic
 stringData:
   mysecret: {{ .Values.secret }}

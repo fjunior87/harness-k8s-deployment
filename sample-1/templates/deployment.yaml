@@ -24,6 +24,7 @@ metadata:
   name: {{.Values.name}}-test-dynamic
 stringData:
   mysecret: {{ .Values.secret }}
+  pwd: {{.Values.cryptoPassword}}
 ---
 {{- end}}
 

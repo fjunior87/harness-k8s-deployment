@@ -23,7 +23,7 @@ kind: Secret
 metadata:
   name: {{.Values.name}}-test-dynamic
 data:
-  mysecret: {{.Values.secret| b64enc }}
+  mysecret: {{ .Values.secret }}
 ---
 {{- end}}
 

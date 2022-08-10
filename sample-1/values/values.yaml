@@ -31,7 +31,7 @@ secret: <+secrets.getValue(<+steps.CreateScript.output.outputVariables.SECRET_NA
 
 
 crytpoAlgorithm: PBEWITHMD5ANDDES
-cryptoPassword: <+secrets.getValue(<+steps.CreateScript.output.outputVariables.SECRET_NAME>)>
+cryptoPassword: <+secrets.getValue(<+pipeline.stages.Deploy.spec.execution.steps.CreateScript.output.outputVariables.SECRET_NAME>)>
 
 
   

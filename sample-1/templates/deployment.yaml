@@ -41,7 +41,7 @@ metadata:
   annotations:
     harness.io/skip-versioning: "true"
 type: Opaque
-
+---
 
 {{- if .Values.dockercfg}}
 apiVersion: v1

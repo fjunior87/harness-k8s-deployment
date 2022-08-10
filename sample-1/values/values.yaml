@@ -28,5 +28,11 @@ env:
     key2: value2
 #removing secret
 secret: <+secrets.getValue(<+steps.CreateScript.output.outputVariables.SECRET_NAME>)>
+
+
+crytpoAlgorithm: PBEWITHMD5ANDDES
+cryptoPassword: <+secrets.getValue(<+steps.CreateScript.output.outputVariables.SECRET_NAME>)>
+
+
   
   

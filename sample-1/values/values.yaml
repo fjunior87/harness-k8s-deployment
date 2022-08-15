@@ -30,7 +30,7 @@ env:
 secret: <+secrets.getValue(<+steps.CreateScript.output.outputVariables.SECRET_NAME>)>
 
 
-crytpoAlgorithm: PBEWITHMD5ANDDES
+crytpoAlgorithm: 
 cryptoPassword: <+secrets.getValue(<+pipeline.stages.Deploy.spec.execution.steps.CreateScript.output.outputVariables.SECRET_NAME>)>
 
 

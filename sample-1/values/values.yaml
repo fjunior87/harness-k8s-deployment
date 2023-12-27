@@ -27,11 +27,11 @@ env:
   secrets:
     key2: value2
 #removing secret
-secret: <+secrets.getValue(<+steps.CreateScript.output.outputVariables.SECRET_NAME>)>
+#secret: <+secrets.getValue(<+steps.CreateScript.output.outputVariables.SECRET_NAME>)>
 
 
 crytpoAlgorithm: 
-cryptoPassword: <+secrets.getValue(<+pipeline.stages.Deploy.spec.execution.steps.CreateScript.output.outputVariables.SECRET_NAME>)>
+#cryptoPassword: <+secrets.getValue(<+pipeline.stages.Deploy.spec.execution.steps.CreateScript.output.outputVariables.SECRET_NAME>)>
 
 
   

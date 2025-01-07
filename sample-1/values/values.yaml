@@ -1,6 +1,10 @@
 name: <+stage.variables.name>
 replicas: 2
 
+portal:
+  image:
+    tag: tag_from_github  
+
 image: <+artifact.image>
 # dockercfg: <+artifact.imagePullSecret>
 
